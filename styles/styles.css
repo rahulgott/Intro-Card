@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #40ded1;
+  min-height: 100vh;
+  color: #707070;
+}
+body::before {
+  content: "";
+  background-image: url("../images/pattern.png");
+  background-position: -88px -88px;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+main {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.85);
+  filter: drop-shadow(0.35rem 0.35rem 0.75rem #14a297);
+  max-width: 1400px;
+  height: 650px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  min-width: 300px;
+  margin: 120px 0 0 130px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: flex-end;
+  margin: 50px 130px 0 0;
+}
+
+h1 {
+  font-size: 4.2rem;
+  font-weight: 400;
+}
+
+h1 .span-name {
+  font-weight: 700;
+  color: #40ded1;
+}
+
+.description {
+  margin-top: 70px;
+  font-size: 1.5rem;
+  line-height: 2em;
+}
+
+h2 {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.profile-picture {
+  background-color: #40ded1;
+  border-radius: 50%;
+  height: 270px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0.25rem 0.35rem 0.35rem #14a297);
+}
+
+img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.skills-section {
+  position: absolute;
+  transform: translate(-80px, 270px);
+}
+
+ul {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 2em;
+  text-align: left;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
